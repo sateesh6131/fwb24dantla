@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  - const motel  = ['nuts_type','Weight','Cost']
+  - const nuts   = ['nuts_type','Weight','Cost']
   - let results;
   script.
     function buy(x){
@@ -10,5 +10,5 @@ block content
    } 
   div(class='container-fluid')
     div(class='row')
-      each results, index in nuts 
+      each results, index in nuts  
         div(class='col-sm-2' onclick='buy('+index+')') #{results} 
