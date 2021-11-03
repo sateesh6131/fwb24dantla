@@ -2,4 +2,12 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to  Naga SateeshReddy Dantla #{title}
+  button(type="button", class="btn btn-secondary") Press Me
+
+  script.
+    var client_count = 0;
+    function update(){
+      client_count +=1;
+      document.getElementById("target").innerHTML = "Value now " + client_count;
+    }
